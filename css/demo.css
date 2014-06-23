@@ -102,41 +102,6 @@ section {
 	content: "\e004";
 }
 
-/* Related demos */
-.related {
-	padding: 6em 1em;
-	font-size: 120%;
-}
-
-.related > a {
-	border: 1px solid #4f7f90;
-	display: inline-block;
-	text-align: center;
-	margin: 20px 10px;
-	padding: 25px;
-}
-
-.related a:hover {
-	border-color: #39545e;
-}
-
-.related a img {
-	max-width: 100%;
-	opacity: 0.8;
-}
-
-.related a:hover img,
-.related a:active img {
-	opacity: 1;
-}
-
-.related a h3 {
-	margin: 0;
-	padding: 0.5em 0 0.3em;
-	max-width: 300px;
-	text-align: left;
-}
-
 @media screen and (max-width: 25em) {
 
 	.codrops-header {
