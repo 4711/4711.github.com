@@ -102,6 +102,10 @@ section {
 	content: "\e004";
 }
 
+.img-header {
+	width: 100%;
+}
+
 @media screen and (max-width: 25em) {
 
 	.codrops-header {
