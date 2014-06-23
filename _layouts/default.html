@@ -1,30 +1,43 @@
----
----
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-  <meta charset='UTF-8'/>
-  <title>JD &middot; Delivery Plan</title>
-  <link rel='shortcut icon' href='{{site.baseurl}}/images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='{{site.baseurl}}/fonts/open-sans.css'>
-  <link rel='stylesheet' href='{{site.baseurl}}/app.css'>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.name }}">
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+    <link rel="canonical" href="{{ site.url }}">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="{{ site.name }}: {{ site.description }} (Sitemap)">
+    <title{{ site.description }}</title>
+
+    <meta name="description" content="{{ site.name }} – {{ site.description }}">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    {% include stylesheets %}
+
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-  <div id='container'>
+    <div class="container">
+        <!--==============================header=================================-->
+        <header>
+            {% include header %}
+        </header>
 
-    <div id="header">
-      <div class="navigation">
-        <a href="{{site.baseurl}}" class="title">Home</a>
-      </div>
+        <!--==============================content================================-->
+        {{ content }}
+
+        <!--==============================footer=================================-->
+        <footer>
+            {% include footer %}
+        </footer>
+
     </div>
-
-    <div id='main'>{{content}}</div>
-  </div>
-
-  <div id='footer'>
-    <div class="footer-content">
-       &copy; 2012 Foo Corp    
-    </div>
-  </div>
+    <!-- /container -->
 </body>
+
 </html>
