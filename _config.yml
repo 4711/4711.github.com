@@ -6,9 +6,11 @@ exclude:
 - .gitignore
 - README.md
 
+author: 4711
+
 prose:
   rooturl: "_posts"
-  metadata: 
+  metadata:
     _posts/articles: |
       published: false
       layout: article

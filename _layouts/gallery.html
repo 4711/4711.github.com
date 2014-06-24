@@ -2,14 +2,25 @@
 layout: default
 ---
 
+<style type="text/css">
 
-<img class="img-header" src="{{site.url}}/{{page.image.src}}" alt="" />
+  .bg_{{page.image.effect}} {
+    position : relative;
+    background-attachment : fixed;
+    background-position   : top center;
+    background-size       : cover;
 
-<h2>{{page.image.title}}</h2>
-<h3>{{page.image.caption}}</h3>
-  <div class="meta"> Posted by <a href="http://twitter.com/{{page.author_twitter}}">{{page.author}}</a> on {{ page.date | date: "%B %d, %Y" }} </div>
+    height : 100vh;
+    background-image : url({{site.url}}/{{page.image.src}});
+  }
+</style>
+
+<div class="bg_{{page.image.effect}}"></div>
+
+<div class="main">
+    <h2>{{page.image.title}}</h2>
+    <h3>{{page.image.caption}}</h3>
+    <div class="meta"> Posted by {{site.author}} on {{ page.date | date: "%B %d, %Y" }} </div>
+
+    {{ content }}
 </div>
-
-
-{{ content }}
-
