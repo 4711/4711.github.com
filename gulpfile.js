@@ -4,16 +4,19 @@ var gulp     = require('gulp');
 //var stylus   = require('gulp-stylus');
 var prefixer = require('gulp-autoprefixer');
 var pixrem   = require('gulp-pixrem');
+var concat   = require('gulp-concat');
 var minify   = require('gulp-minify-css');
+var rename   = require('gulp-rename');
 var exec     = require('gulp-exec');
 
 /* Tasks */
 
 gulp.task('css', function() {
-  return gulp
-    .src('_assets/css/*.css')
+  return gulp.src('_assets/css/*.css')
     //.pipe(prefixer('last 2 versions'))
     //.pipe(pixrem())
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('css/'))
     .pipe(minify())
     .pipe(gulp.dest('css/'));
 });

@@ -7,6 +7,11 @@ exclude:
 - .gitignore
 - README.md
 - run.sh
+- node_modules
+- Gemfile
+- Gemfile.lock
+- package.json
+- gulpfile.js
 
 
 author: 4711
