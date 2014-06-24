@@ -1,4 +1,4 @@
-Prose Bootstrap
-===============
+Will become a photo gallery
+============================
 
-A minimal template to get started
+A template to get started...
