@@ -1,0 +1,28 @@
+{
+  "name": "4711.github.com",
+  "version": "0.0.0",
+  "description": "Prose Bootstrap\r ===============",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.1"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-pixrem": "~0.1.1",
+    "gulp-minify-css": "~0.3.5",
+    "gulp-exec": "~2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4711/4711.github.com.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/4711/4711.github.com/issues"
+  }
+}
