@@ -1,8 +1,13 @@
+encoding: utf-8
+markdown: kramdown
+pygments: true
 permalink: none
 baseurl: ""
 exclude:
 - .gitignore
 - README.md
+- run.sh
+
 
 author: 4711
 
